@@ -3,40 +3,67 @@
 
 \usepackage{multicol}
 \usepackage{graphicx}
+\usepackage{soul}
 \graphicspath{ {images/} }
+
+
+\begin{document}
+
+%Title pages
+\title{Ex vs. Teco}
+\author{Brandon Moore and John Markiewicz}
+\date{}
+
+\begin{frame}
+	\titlepage
+\end{frame}
+
+\title{Neo-Vim vs Spacemacs}
+\author{Brandon Moore and John Markiewicz}
+\date{}
+
+\begin{frame}
+	\titlepage
+\end{frame}
+%End title pages
 
 \title{Vim vs. Emacs}
 \author{Brandon Moore and John Markiewicz}
 \date{}
-
-\begin{document}
 
 \begin{frame}
 	\titlepage
 \end{frame}
 
 \begin{frame}
+	\frametitle{C-x M-c M-butterfly}
   \begin{quote}
     Emacs is a great operating system, lacking only a decent editor
   \end{quote}
+	\begin{flushright}
+		--Anonymous
+	\end{flushright}
 \end{frame}
 \note{A vim-user's view of Emacs is that the editor has a heavy amount of features, but lacks a focus on actually editing and tries to do everything under the sun.}
 
 \begin{frame}
+	\frametitle{vi vi vi}
   \begin{quote}
     Using a free version of vi is not a sin but a penance.
   \end{quote}
   \begin{flushright}
-    --Richard Stallman, head of the Church of Emacs
+	\only<1>{--Richard Stallman, head of the Church of Emacs\\}
+	\only<2>{--\st{Richard Stallman, head of the Church of Emacs}\\}
+	\only<2>{--Saint IGNUcious, head of the Church of Emacs}
   \end{flushright}
 \end{frame}
 \note{Emacs view on Vim: it's fine to use, but why limit yourself like that?}
 
 \begin{frame}
-  \frametitle{A historic holy war\\Emacs vs. Vi}
+				\frametitle{A historic holy war\\Emacs vs. Vi(m)}
   \begin{itemize}
   \item TECO(1962) $\rightarrow$ Emacs(1976) $\rightarrow$ GNU Emacs(1985) $\rightarrow$ Spacemacs
-  \item Vi(1976) $\rightarrow$ Vim(1991) $\rightarrow$ NeoVim
+	\item Ex(1976) $\rightarrow$ Vi(1976) $\rightarrow$ Vim(1991) $\rightarrow$ NeoVim
   \end{itemize}
 \end{frame}
 \note{History of the editors}
@@ -56,12 +83,19 @@
   \begin{multicols}{2}
     \textbf{Pros of Vim}
     \begin{itemize}
-    \item Filler
+    \item Customizable
+		\item Rich library of extensions
+		\item Constantly improving
+		\item Portable
+		\item ...in multiple ways
     \end{itemize}
     \columnbreak
     \textbf{Cons of Emacs}
     \begin{itemize}
-    \item Filler
+    \item Reliant on customization
+		\item Comes with bloat
+		\item Hello Carpal Tunnel
+		\item Tries to do too much
     \end{itemize}
   \end{multicols}
 \end{frame}
@@ -95,9 +129,19 @@
 \note{EDT's pro con slide}
 
 \begin{frame}
+	\frametitle{stdlinux (and problems with old systems)}
+	\begin{itemize}
+		\item stdlinux is old and out of date. vim and emacs don't work well
+		\item a basic .vimrc is needed to use vim on stdlinux
+		\item It should be updated soon!
+	\end{itemize}
+\end{frame}
+
+\begin{frame}
   \frametitle{How to learn}
   \textbf{Vim}
   \begin{itemize}
+	\item vim help pages (via :help <topic>)
   \item \$vimtutor
   \item http://www.openvim.com/
   \end{itemize}
